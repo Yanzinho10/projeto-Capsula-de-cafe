@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>aceita um cafezinho?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12@sm">
+      <h1>Vai um cafezinho?</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4@sm col-3@md">
+      <div class="filters-group">
+        <label for="filters-search-input" class="filter-label">🔎 Buscar</label>
+        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12@sm filters-group-wrap">
+      <div class="filters-group">
+        <p class="filter-label">☕ Intensidade</p>
+        <div class="btn-group filter-options">
+          <button class="btn btn--primary" data-group="Creations">Creations</button>
+          <button class="btn btn--primary" data-group="4">4</button>
+          <button class="btn btn--primary" data-group="5">5</button>
+          <button class="btn btn--primary" data-group="6">6</button>
+          <button class="btn btn--primary" data-group="8">8</button>
+          <button class="btn btn--primary" data-group="9">9</button>
+          <button class="btn btn--primary" data-group="10">10</button>
+        </div>
+      </div>
+      <fieldset class="filters-group">
+        <legend class="filter-label">Organizar</legend>
+        <div class="btn-group sort-options">
+          <label class="btn active">
+            <input type="radio" name="sort-value" value="dom" checked /> Padrão
+          </label>
+          <label class="btn">
+            <input type="radio" name="sort-value" value="title" /> Título
+          </label>
+          <label class="btn">
+            <input type="radio" name="sort-value" value="date-created" /> Data de Criação
+          </label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="grid" class="row my-shuffle-container">
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["4"]' data-date-created="2021-05-12" data-title="Volluto">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/4-volluto.png" alt="xícara com café, caixa de cápsulas e cápsula de Volluto" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Volluto</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 4</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Doce e Amanteigado</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Cereal e Frutado</p>
+        <p class="picture-item__description"><b>Café adocicado e leve:</b> Os aromas leves e agradáveis dos Arábicas da Colômbia e do Brasil estão em perfeita harmonia neste amigável Espresso. A acidez frutada e as notas de biscoito doce presentes no Volluto são encantadoras. É como um incrível dia de verão.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["9"]' data-date-created="2021-05-12" data-title="Arpeggio">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/9-arpeggio.png" alt="xícara com café, caixa de cápsulas e cápsula de Arpeggio" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Arpeggio</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 9</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Intenso e Cremoso</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Cacau</p>
+        <p class="picture-item__description"><b>Notas ousadas e Torradas:</b> Um café com notas de cacau adquiridas através de uma torra escura - um processo em que os grãos são submetidos a muito calor em pouco tempo. Essa mistura requintada é um verdadeiro reflexo do significado cultural de Florença.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["4"]' data-date-created="2021-05-12" data-title="Buenos Aires">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/4-buenos-aires.png" alt="xícara com café, caixa de cápsulas e cápsula de Buenos Aires" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Buenos Aires</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 4</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Doce & Cereais</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Nozes & Doçura</p>
+        <p class="picture-item__description"><b>A nota doce de pipoca:</b> possui Arábicas Colombianos suavemente torrados com Robustas de Uganda para entregar notas distintas de cereal e doces. Aproveite este café e desfrute como um nativo: Adicione leite e açúcar à vontade ao seu Lungo.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["10"]' data-date-created="2021-05-12" data-title="Ristretto">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/10-ristretto.png" alt="xícara com café, caixa de cápsulas e cápsula de Ristretto" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Ristretto</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 10</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Intenso</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Frutado e Intensamente torrado</p>
+        <p class="picture-item__description"><b>Menos é mais:</b> Um blend de Arábicas e Robustas do mundo todo que recria o aroma frutado e o torrado intenso do clássico café italiano.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["5"]' data-date-created="2021-05-12" data-title="Nicaragua">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/5-nicaragua.png" alt="xícara com café, caixa de cápsulas e cápsula de Nicaragua" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Nicaragua</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 5</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Cereais Doces</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Mel e Cereal</p>
+        <p class="picture-item__description"><b>Black Honey:</b> Se gosta de espuma de leite, o Master Origins Nicaragua, que possui Arábicas processados pelo método 'Black Honey', dá um fantástico Latte Machiato, ressaltando suas notas equilibradas de nozes torradas.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["6"]' data-date-created="2021-05-12" data-title="Colombia">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/6-colombia.png" alt="xícara com café, caixa de cápsulas e cápsula de Colômbia" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Colômbia</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 6</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Frutado e Vibrante</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Groselha e Framboesa</p>
+        <p class="picture-item__description"><b>Torra mais leve e rápida:</b> Os grãos Arábicas deste café são colhidos tardiamente num processo cuidadoso que traz características marcantes de frutas vermelhas, com destaque para groselha e framboesa.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["6"]' data-date-created="2021-05-12" data-title="Genova Livanto">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/6-genova-livanto.png" alt="xícara com café, caixa de cápsulas e cápsula de Genova Livanto" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Genova Livanto</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 10</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Redondo e Balanceado</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Caramel e Cereal</p>
+        <p class="picture-item__description"><b>Menos é mais:</b> O Ispirazione Genova Livanto celebra esta importante cidade comercial com os sabores equilibrados das arábicas da América Latina e um torrado médio que desenvolve essa nota imbatível de caramelo doce.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["4"]' data-date-created="2021-05-12" data-title="Linizio">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/4-linizio.png" alt="xícara com café, caixa de cápsulas e cápsula de Linizio" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Linizio</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 6</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Balanceado & Suave</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Malte & Cereal</p>
+        <p class="picture-item__description"><b>Menos é mais:</b> Suave, harmonizado. Ele é composto por Arábicas puros da América do Sul, tem as notas de cereais maltados e uma textura sedosa que gentilmente desperta seus sentidos.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["6"]' data-date-created="2021-05-12" data-title="Vienna Linizio Lungo">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/6-vienna-linizio.png" alt="xícara com café, caixa de cápsulas e cápsula de Vienna Linizio Lungo" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Vienna Linizio Lungo</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 6</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Redondo & Suave</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Malte & Cereal</p>
+        <p class="picture-item__description"><b>Equilibrado e agradável:</b> O Vienna Linizio Lungo recria esse sabor vienense equilibrado e agradável combinando os arábicas doces brasileiros e colombianos, levemente torrados por nossos especialistas para realçar as notas de malte e cereal na xícara.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["8"]' data-date-created="2021-05-12" data-title="Roma">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/8-roma.png" alt="xícara com café, caixa de cápsulas e cápsula de Roma" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Roma</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 8</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Completo e Equilibrado</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Amadeirado e Cereal</p>
+        <p class="picture-item__description"><b>Equilíbrio sutil entre a força do grau de torrefação:</b> A torrefação leve e a moagem fina dão requinte a esse café. Esses dois fatores também tornam o Ispirazione Roma um café forte e suave ao mesmo tempo.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["8"]' data-date-created="2021-05-12" data-title="Stockholm">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/8-stockholm.png" alt="xícara com café, caixa de cápsulas e cápsula de Stockholm" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Stockholm</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ 8</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Rico & Encorpado</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Maltado & Encorpado</p>
+        <p class="picture-item__description"><b>Arábica intenso:</b> Proporcionam o sabor puro amado pelos suecos - maltado, com um toque de rico de amargor.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["Creations"]' data-date-created="2021-05-12" data-title="Caramal Crème Brûlée">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/caramel-creme-brulee.png" alt="Cápsula de Caramal Crème Brûlée" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Caramal Crème Brûlée</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ Creations</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Caramelizado</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Caramelo</p>
+        <p class="picture-item__description"><b>Experimente como um cappuccino:</b> Possui notas de caramelo, coco e baunilha que, combinadas com o doce aroma de caramelo, suavizam suas notas torradas.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["Creations"]' data-date-created="2021-05-12" data-title="Chiaro">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/chiaro.png" alt="Cápsula de Chiaro" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Chiaro</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ Creations</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Suave & Doce</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Biscoito Adocicado</p>
+        <p class="picture-item__description"><b>A doçura natural do café:</b> Selecionamos cuidadosamente Arábicas do Quênia e da Indonésia para desenvolver este blend suave, que revela suas notas de caramelo e biscoito doce, quando combinado com leite.</p>
+      </div>
+    </figure>
+
+    <figure class="col-3@xs col-6@sm col-3@md picture-item picture-item--h2" data-groups='["Creations"]' data-date-created="2021-05-12" data-title="Vanilla Éclair">
+      <div class="picture-item__inner">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img src="./assets/images/vanilla-eclair.png" alt="Cápsula de Vanilla Éclair" />
+          </div>
+        </div>
+        <div class="picture-item__details">
+          <figcaption class="picture-item__title">Vanilla Éclair</figcaption>
+          <p class="picture-item__tags hidden@xs">☕ Creations</p>
+        </div>
+        <p class="picture-item__description"><b>Perfil Aromático:</b> Baunilha</p>
+        <p class="picture-item__description"><b>Notas Aromáticas:</b> Baunilha</p>
+        <p class="picture-item__description"><b>Experimente combinar com leite:</b> É em doce harmonia que o sabor se funde em um espresso redondo e suave com cafés arábicas da América Latina. A mistura base de grãos Arábicas do Brasil e Colômbia traz um sabor suave com notas de cereais maltados.</p>
+      </div>
+    </figure>
+
+    <div class="col-1@sm col-1@xs my-sizer-element"></div>
+  </div>
+</div>
+
+  <script src='https://unpkg.com/shufflejs@5'></script><script  src="./assets/js/script.js"></script>
+
+</body>
+</html>
